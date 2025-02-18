@@ -46,6 +46,7 @@ body::before {
 .navbar {
   display: flex;
   justify-content: space-between;
+  
 }
 
 nav {
@@ -59,7 +60,17 @@ nav {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  
 }
+
+.nav_icon{
+  position: absolute;
+  right:2rem;
+  top:1em;
+  font-size: 1.2rem;
+  display:none;
+}
+
 
 nav a {
   color: white;
@@ -161,19 +172,30 @@ nav a:hover {
 
   .container {
     padding: 1rem;
+    height: 768px;
+  }
+
+  .navbar{
+    justify-content: space-between;
   }
 
   nav {
     padding: 0.5rem;
+    
   }
 
   nav a {
     padding: 0.5rem 1rem;
   }
+  .content{
+    width:90%;
+    margin:0 auto;
+    margin-top:2rem;
+  }
 }
 
 @media (max-width: 1025px) {
-  .email a {
+  .email  {
     display: none;
   }
 }
@@ -181,6 +203,7 @@ nav a:hover {
   .logo img {
     width: 150px;
   }
+  
 }
 
 @media (max-width: 400px) {
@@ -200,11 +223,22 @@ nav a:hover {
 
   .container {
     padding: 1rem; 
+    max-height:fit-content;
+    margin-bottom: 3rem;
   }
 
   body {
     margin-bottom: 5rem; 
   }
+}
+@media(max-width:455px){
+  nav{
+    display:none;
+  }
+  .nav_icon{
+    display:block;
+}
+
 }
 
 /* page 2 */
